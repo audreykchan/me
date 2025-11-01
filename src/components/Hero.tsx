@@ -1,9 +1,11 @@
+import { getAssetPath } from '../utils/assets';
+
 export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row items-start gap-12 mb-24">
       <div className="flex-shrink-0">
         <img
-          src="/images/IMG_5941.jpg"
+          src={getAssetPath('/images/IMG_5941.jpg')}
           alt="Audrey"
           className="w-48 h-48 rounded-full object-cover"
         />

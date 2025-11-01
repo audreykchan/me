@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { projectsData } from '../data/projects';
+import { getAssetPath } from '../utils/assets';
 
 export default function ProjectGrid() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function ProjectGrid() {
         >
           <div className="h-64 overflow-hidden bg-gray-100">
             <img
-              src={project.thumbnail}
+              src={getAssetPath(project.thumbnail)}
               alt={project.title}
               className="w-full h-full object-fill transition-transform duration-300 group-hover:scale-105"
             />

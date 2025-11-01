@@ -1,5 +1,6 @@
 import { X } from 'lucide-react';
 import { useEffect } from 'react';
+import { getAssetPath } from '../utils/assets';
 
 interface MediaViewerProps {
   media: {
@@ -36,7 +37,7 @@ export default function MediaViewer({ media, onClose }: MediaViewerProps) {
       >
         {media.type === 'image' ? (
           <img
-            src={media.src}
+            src={getAssetPath(media.src)}
             alt="Full screen"
             className="w-full h-full object-contain"
           />
@@ -51,7 +52,7 @@ export default function MediaViewer({ media, onClose }: MediaViewerProps) {
           />
         ) : (
           <video
-            src={media.src}
+            src={getAssetPath(media.src)}
             autoPlay
             loop
             muted

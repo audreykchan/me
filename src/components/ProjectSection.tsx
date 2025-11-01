@@ -1,4 +1,5 @@
 import { Maximize2 } from 'lucide-react';
+import { getAssetPath } from '../utils/assets';
 
 interface Media {
   type: 'image' | 'video';
@@ -33,12 +34,12 @@ export default function ProjectSection({ section, onMediaClick }: ProjectSection
               {item.type === 'image' ? (
                 <div className="relative group">
                   <img
-                    src={item.src}
+                    src={getAssetPath(item.src)}
                     alt={item.caption}
                     className="w-full rounded-lg"
                   />
                   <button
-                    onClick={() => onMediaClick({ type: 'image', src: item.src })}
+                    onClick={() => onMediaClick({ type: 'image', src: getAssetPath(item.src) })}
                     className="absolute top-4 right-4 p-2 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     <Maximize2 size={20} className="text-white" />
@@ -64,7 +65,7 @@ export default function ProjectSection({ section, onMediaClick }: ProjectSection
               ) : (
                 <div className="relative group">
                   <video
-                    src={item.src}
+                    src={getAssetPath(item.src)}
                     autoPlay
                     loop
                     muted
@@ -72,7 +73,7 @@ export default function ProjectSection({ section, onMediaClick }: ProjectSection
                     className="w-full rounded-lg"
                   />
                   <button
-                    onClick={() => onMediaClick({ type: 'video', src: item.src })}
+                    onClick={() => onMediaClick({ type: 'video', src: getAssetPath(item.src) })}
                     className="absolute top-4 right-4 p-2 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     <Maximize2 size={20} className="text-white" />
