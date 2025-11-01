@@ -44,6 +44,23 @@ export default function ProjectSection({ section, onMediaClick }: ProjectSection
                     <Maximize2 size={20} className="text-white" />
                   </button>
                 </div>
+              ) : item.src.includes('youtube.com/embed') ? (
+                <div className="relative group">
+                  <iframe
+                    src={item.src}
+                    title={item.caption}
+                    className="w-full rounded-lg aspect-video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                  <button
+                    onClick={() => onMediaClick({ type: 'video', src: item.src })}
+                    className="absolute top-4 right-4 p-2 bg-black/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    <Maximize2 size={20} className="text-white" />
+                  </button>
+                </div>
               ) : (
                 <div className="relative group">
                   <video
@@ -94,12 +111,8 @@ export default function ProjectSection({ section, onMediaClick }: ProjectSection
               href={button.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-lg font-medium transition-all hover:shadow-md active:scale-95"
-              style={{
-                backgroundColor: '#333',
-                color: 'white',
-                fontFamily: 'Inter, sans-serif'
-              }}
+              className="text-sm hover:underline transition-opacity hover:opacity-60 border border-gray-300 rounded px-3 py-2"
+              style={{ color: '#333', fontFamily: 'Inter, sans-serif' }}
             >
               {button.label}
             </a>

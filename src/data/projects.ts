@@ -34,7 +34,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'video',
-            src: 'https://youtu.be/D1wYtTpmOc0',
+            src: 'https://www.youtube.com/embed/D1wYtTpmOc0',
             caption: 'Fig: CLIP platform demo showing course browsing and file upload flow'
           }
         ]
@@ -73,8 +73,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-token-economy.png',
+            type: 'video',
+            src: '/images/p1design.mp4',
             caption: 'Fig: Token economy demonstrating that uploads = +2 tokens and unlocks = -1 token'
           }
         ]
@@ -88,8 +88,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-supabase-db.png',
+            type: 'video',
+            src: '/images/prj1implementation.mp4',
             caption: 'Fig: Supabase database schema'
           }
         ],
@@ -103,7 +103,7 @@ export const projectsData: Project[] = [
   {
     id: 'laptop-stand',
     title: 'Ergonomic Foldable Laptop Stand',
-    thumbnail: '/placeholder-laptop-stand.png',
+    thumbnail: '/images/project2.png',
     techStack: ['CAD (Fusion360)', 'Mechanical Joints', 'User-Centered Design', 'DFM', 'Ergonomics'],
     sections: [
       {
@@ -113,9 +113,9 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-laptop-stand-overview.png',
-            caption: 'Fig: Ergonomic laptop stand in multiple configurations'
+            type: 'video',
+            src: '/images/laptop.mp4',
+            caption: 'Fig: Exploded view of laptop design'
           }
         ]
       },
@@ -132,7 +132,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-existing-stands.png',
+            src: '/images/competitors.png',
             caption: 'Fig: Many existing laptop stands in the market still have limited mobility and adjustability'
           }
         ]
@@ -151,7 +151,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'video',
-            src: '/placeholder-joint-simulation.mp4',
+            src: '/images/360-joint.mp4',
             caption: 'Fig: Joint simulation showing the base plate joint changing its angle from 0-360°'
           }
         ]
@@ -164,8 +164,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-laptop-stand-final.png',
+            type: 'video',
+            src: '/images/progress.mp4',
             caption: 'Fig: Final laptop stand design with all features integrated'
           }
         ],
@@ -178,7 +178,7 @@ export const projectsData: Project[] = [
   {
     id: 'supply-chain',
     title: 'Supply Chain Dashboard',
-    thumbnail: '/placeholder-supply-chain.png',
+    thumbnail: '/images/prj5.png',
     techStack: ['Python', 'SQL', 'Supply Chain Optimization', 'A/B Testing'],
     sections: [
       {
@@ -189,9 +189,9 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-dashboard-overview.png',
-            caption: 'Fig: Supply chain dashboard main interface'
+            type: 'video',
+            src: '/images/prj5results.mp4',
+            caption: 'Fig: Supply chain dashboard features'
           }
         ]
       },
@@ -209,7 +209,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-excel.png',
+            src: '/images/prj5problem.png',
             caption: 'Fig: Preexisting (anonymized) Excel supply chain dashboard'
           }
         ]
@@ -228,7 +228,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-pie-chart.png',
+            src: '/images/prj5design.png',
             caption: 'Fig: Pie chart visualization of inventory distribution by category and real-time reorder alerts'
           }
         ]
@@ -242,8 +242,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-dashboard-final.png',
+            type: 'video',
+            src: '/images/prj5overview.mp4',
             caption: 'Fig: Final dashboard with all features implemented'
           }
         ],
@@ -257,7 +257,7 @@ export const projectsData: Project[] = [
   {
     id: 'price-forecasting',
     title: 'AI/ML Price Forecasting & Optimization Tool',
-    thumbnail: '/placeholder-price-tool.png',
+    thumbnail: '/images/p6.png',
     techStack: ['Python', 'SQL', 'Scikit Learn', 'Unit Economics'],
     sections: [
       {
@@ -268,9 +268,9 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-price-overview.png',
-            caption: 'Fig: Price forecasting tool main interface'
+            type: 'video',
+            src: '/images/p6overview.mp4',
+            caption: 'Fig: Feature overview of final dashboard'
           }
         ]
       },
@@ -286,8 +286,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-raw-data.png',
+            type: 'video',
+            src: '/images/p6problem.mp4',
             caption: 'Fig: Raw transaction data alone makes it difficult to extract actionable insights'
           }
         ]
@@ -305,8 +305,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-price-slider.png',
+            type: 'video',
+            src: '/images/p6design.mp4',
             caption: 'Fig: Interactive price slider that dynamically projects sales volume and revenue in under 3 seconds'
           }
         ]
@@ -321,8 +321,8 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-price-final.png',
-            caption: 'Fig: Final price optimization tool interface'
+            src: '/images/p6implementation.png',
+            caption: 'Fig: ML linear regression used to predict revenue of the next 7 days'
           }
         ],
         buttons: [
@@ -334,7 +334,7 @@ export const projectsData: Project[] = [
   {
     id: 'portable-blender',
     title: 'Portable On-the-Go Blender',
-    thumbnail: '/placeholder-blender.png',
+    thumbnail: '/images/prj3.png',
     techStack: ['CAD (Fusion360)', 'DFM', 'Thread & Fastener Design'],
     sections: [
       {
@@ -344,9 +344,9 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-blender-overview.png',
-            caption: 'Fig: Portable blender in various use cases'
+            type: 'video',
+            src: '/images/prj3overview.mp4',
+            caption: 'Fig: Exploded view of blender design'
           }
         ]
       },
@@ -362,7 +362,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-reviews.png',
+            src: '/images/reviews.png',
             caption: 'Fig: Critical reviews of protein shakes and portable blenders currently available'
           }
         ]
@@ -379,8 +379,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-blender-diagram.png',
+            type: 'video',
+            src: '/images/prj3design.mp4',
             caption: 'Fig: Part diagram of blender prototype'
           }
         ]
@@ -392,9 +392,9 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-blender-final.png',
-            caption: 'Fig: Final blender design with threading detail'
+            type: 'video',
+            src: '/images/threading.mp4',
+            caption: 'Fig: Custom right-hand SPI-400 threading profile'
           }
         ],
         buttons: [
@@ -406,7 +406,7 @@ export const projectsData: Project[] = [
   {
     id: 'toilet-flapper',
     title: 'Toilet Flapper w/ Integrated Cleaning Agent Chamber',
-    thumbnail: '/placeholder-flapper.png',
+    thumbnail: '/images/p4.png',
     techStack: ['CAD', 'CFD', 'Technical Drawing', 'Manufacturing Cost Analysis'],
     sections: [
       {
@@ -417,7 +417,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-flapper-technical.png',
+            src: '/images/prj4overview.png',
             caption: 'Fig: Technical drawing showing isometric, top, bottom, front, right views'
           }
         ]
@@ -434,7 +434,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-corroded.png',
+            src: '/images/problem4.png',
             caption: 'Fig: Corroded toilet components from prolonged exposure to water chlorination and tank chemicals'
           }
         ]
@@ -452,7 +452,7 @@ export const projectsData: Project[] = [
         media: [
           {
             type: 'image',
-            src: '/placeholder-flapper-design.png',
+            src: '/images/design4.png',
             caption: 'Fig: Technical drawing of patent-pending toilet flapper'
           }
         ]
@@ -466,8 +466,8 @@ export const projectsData: Project[] = [
         ],
         media: [
           {
-            type: 'image',
-            src: '/placeholder-flapper-final.png',
+            type: 'video',
+            src: '/images/results4.mp4',
             caption: 'Fig: Final flapper design with integrated cleaning chamber'
           }
         ],

@@ -40,6 +40,15 @@ export default function MediaViewer({ media, onClose }: MediaViewerProps) {
             alt="Full screen"
             className="w-full h-full object-contain"
           />
+        ) : media.src.includes('youtube.com/embed') ? (
+          <iframe
+            src={media.src}
+            title="Full screen video"
+            className="w-full h-full"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         ) : (
           <video
             src={media.src}

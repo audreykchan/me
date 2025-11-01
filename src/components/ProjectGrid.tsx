@@ -12,11 +12,11 @@ export default function ProjectGrid() {
           onClick={() => navigate(`/project/${project.id}`)}
           className="group bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] border border-gray-200 text-left"
         >
-          <div className="aspect-[4/3] overflow-hidden bg-gray-100">
+          <div className="h-64 overflow-hidden bg-gray-100">
             <img
               src={project.thumbnail}
               alt={project.title}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-fill transition-transform duration-300 group-hover:scale-105"
             />
           </div>
 
